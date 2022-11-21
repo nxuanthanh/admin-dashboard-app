@@ -6,7 +6,7 @@ import listPlugin from "@fullcalendar/list";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 import React, { useState } from "react";
-import Header from "../components/Header";
+import { Header } from "../components";
 import { tokens } from "../theme";
 
 function Calendar() {

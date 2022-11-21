@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import React from "react";
 import { mockDataInvoices } from "../assets/data/mockData";
-import Header from "../components/Header";
+import { Header } from "../components";
 import { tokens } from "../theme";
 
 function Invoices() {

@@ -1,14 +1,20 @@
 import { Box, CssBaseline, ThemeProvider } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
-import Calendar from "./scenes/Calendar";
-import Contacts from "./scenes/Contacts";
-import Dashboard from "./scenes/dashboard";
-import FAQ from "./scenes/FAQ";
-import Form from "./scenes/Form";
-import Sidebar from "./scenes/global/Sidebar";
-import Topbar from "./scenes/global/Topbar";
-import Invoices from "./scenes/Invoices";
-import Team from "./scenes/Team";
+import { Sidebar, Topbar } from "./components/common";
+import {
+  Bar,
+  Calendar,
+  Contacts,
+  Dashboard,
+  FAQ,
+  Form,
+  Geography,
+  Invoices,
+  Line,
+  Pie,
+  Team,
+} from "./pages";
+
 import { ColorModeContext, useMode } from "./theme";
 
 function App() {
@@ -30,6 +36,10 @@ function App() {
               <Route path="/form" element={<Form />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/line" element={<Line />} />
+              <Route path="/geography" element={<Geography />} />
             </Routes>
           </Box>
         </Box>

@@ -1,4 +1,3 @@
-import { useTheme } from "@emotion/react";
 import { ExpandMore } from "@mui/icons-material";
 import {
   Accordion,
@@ -6,9 +5,10 @@ import {
   AccordionSummary,
   Box,
   Typography,
+  useTheme,
 } from "@mui/material";
 import React from "react";
-import Header from "../components/Header";
+import { Header } from "../components";
 import { tokens } from "../theme";
 
 function FAQ() {
